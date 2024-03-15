@@ -7,13 +7,12 @@
 </head>
 <body>
 
-    <h1>ciao</h1>
+    <h1>PHP Badwords</h1>
 
-    <?php
-
-    $vari = "Alessio";
-    echo "Ciao sono $vari." 
-    ?>
+    <form class="form-page" action="form.php">
+        Vai alla pagina del form:
+        <input type="submit" placeholder="Vai!">
+    </form>
     
 
 </body>

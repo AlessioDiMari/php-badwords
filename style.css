@@ -6,27 +6,49 @@
 }
 
 .container{
+    margin: 50px;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    border: 2px solid black;
 }
 
 h1 {
-    color: #333;
+    margin-bottom: 40px;
 }
 
 .paragraph {
     margin-top: 20px;
     padding: 10px;
-    border: 1px solid #ccc;
+    background-color: grey;
+    border: 2px solid black;
+}
+
+.paragraph, .cens-paragraph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cens-paragraph {
     margin-top: 20px;
-    background-color: #fff;
     padding: 10px;
-    border: 1px solid #ccc;
+    background-color: grey;
+    border: 2px solid black;
+}
+
+.cap{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+p{
+    padding: 10px;
 }
 
 .lenght {
     font-style: italic;
-    color: #666;
+    color: red;
 }

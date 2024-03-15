@@ -17,21 +17,25 @@ $paragraph = $_GET['user-paragraph'];
 
     <div class="container">
         <h1>Ecco il risultato</h1>
-        <p>La parola che hai deciso di censurare è: <?php echo $badword ?></p>
+        <p>La parola che hai deciso di censurare è: <strong><?php echo $badword ?></strong> </p>
         
         <div class="paragraph">
-            Il tuo paragrafo è:
+            <div class="cap">
+                Il tuo paragrafo è:
+            </div>
             <p>
                 <?php
                 echo $paragraph
                 ?>
                 </p>
             <div class="lenght">
-                Lunghezza: <?php echo strlen($paragraph)?>
+                Lunghezza: <strong><?php echo strlen($paragraph)?></strong>
             </div>
         </div>
         <div class="cens-paragraph">
-            Il tuo paragrafo censurato è:
+            <div class="cap">
+                Il tuo paragrafo dopo le censure è:
+            </div>
             <p>
                 <?php
                 $censParagraph = str_ireplace($badword,"***",$paragraph);
@@ -39,7 +43,7 @@ $paragraph = $_GET['user-paragraph'];
                 ?>
             </p>
             <div class="lenght">
-                Lunghezza: <?php echo strlen($censParagraph)?>
+                Lunghezza: <strong><?php echo strlen($censParagraph)?></strong>
             </div>
         </div>
     </div>

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    padding: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+.paragraph {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.cens-paragraph {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.lenght {
+    font-style: italic;
+    color: #666;
+}
